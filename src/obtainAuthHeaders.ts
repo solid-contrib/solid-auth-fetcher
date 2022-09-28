@@ -104,7 +104,7 @@ export async function getAuthHeaders(
 ): Promise<{ Authorization: string; DPop: string }> {
   if (authFetcher instanceof AuthFetcher) {
     return {
-      Authorization: JSON.parse(
+      Authorization: "dpop " + JSON.parse(
         (authFetcher as any).authenticatedFetcher.tokenRefresher.storageUtility
           .storage.map["solidAuthFetcherUser:global"]
       ).accessToken,
