@@ -1,4 +1,8 @@
-# Solid Auth Fetcher
+# Deprecated
+
+**Solid Auth Fetcher might still work against NSS and PSS, but it does not work against CSS and ESS.**
+
+**Please use [`solid-client-authn`](https://docs.inrupt.com/developer-tools/javascript/client-libraries/authentication/) instead.**
 
 A client tool to login and make authenticated requests to Solid compliant servers.
 
